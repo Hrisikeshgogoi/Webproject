@@ -1,0 +1,4 @@
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.790128590246!2d94.92511981539423!3d27.444650643593505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3740a28c2ccade31%3A0x6cc966e01b9371ef!2sPrashanti%20Divine%20Valley%20School!5e0!3m2!1sen!2sin!4v1653247095009!5m2!1sen!2sin"
+         width="10%" height="auto" style="border:0; border-radius: 100%;" 
+         allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -1,0 +1,20 @@
+.navbar{
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+}
+.navbar a{
+    float: right;
+    font-size: 16px;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+}
+.navbar a:hover{
+    background-color: blueviolet;
+}

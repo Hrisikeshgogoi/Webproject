@@ -1,0 +1,198 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="footercour.css">
+   
+</head>
+<body>
+    <div class="custom-padding">
+        <nav>
+          <div class="logo"><img src="LOGO.png" height="58" alt="LOGO">Sri Sathya Sai <br>Prashanti Divine Valley School</div>
+  
+          <ul class="menu-area">
+            <li><a href="corousel.php">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">Blog</a></li>
+            <li><a href="faqulty1.php">Faqulty</a></li>
+          </ul>
+        </nav>
+      </div>
+    <div>
+        
+        <div class="contact_form_container">
+                <h3 class="heading">LOVE ALL SERVE ALL</h3>
+      
+                <div class="main_content">
+      
+                    <div class="left">
+                        <form class="contact_form" action="#">
+      
+                            <div class="form_input_wraper">
+                                <input class="name" type="text" id="name" name="name" >
+                                <label for="name">Your Name</label>
+                            </div>
+      
+                            <div class="form_input_wraper">
+                                <input class="email" type="text" id="email" name="email" required>
+                                <label for="email">Email</label>
+                            </div>
+      
+                            <div class="form_input_wraper">
+                                <textarea class="msg" id="message" name="message" required></textarea>
+                                <label for="message">Message</label>
+                            </div>
+      
+                            <button type="submit" aria-label="Submit Button" class="submit_button">
+                                <i class="fa fa-angle-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <script src="https://smtpjs.com/v3/smtp.js"></script>
+                    <script>
+                        const form = document.querySelector('.contact_form');
+                        function sendMsg(e){
+                            e.preventDefault();
+                            
+                              const name = document.querySelector('.name'),
+                                    email = document.querySelector('.email'),
+                                    msg = document.querySelector('.msg');
+
+
+                            //send email public
+                            Email.send({
+                                Host : "smtp.elasticemail.com",
+                                Username : "slytherine49@gmail.com",
+                                Password : "0E6705728B78B22F3776FE82633380D4EEA0",
+                                To : 'slytherine49@gmail.com',
+                                From : email.value,
+                                Subject : "contact_form",
+                                Body : msg.value
+                            }).then(
+                            message => alert(message)
+                            )
+                        }
+                        form.addEventListener('submit',sendMsg);
+
+                            /*for private 
+                            Email.send({
+                                SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+                                To : 'them@website.com',
+                                From : "you@isp.com",
+                                Subject : "This is the subject",
+                                Body : "And this is the body"
+                            }).then(
+                            message => alert(message)
+                            );*/
+
+                    </script>
+      
+                    <div class="right">
+                        <div class="header"><img src="LOGO.png"></div>
+                        <h3 class="heading">School Location</h3>
+      
+                        <ul>
+                            <li>
+                                <span class="icon">
+                                    <i class="fa fa-phone"></i>
+                                </span>
+                                <span class="text">+91 99544 52729</span>
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                                <span class="text">
+                                    ssspdvschool@gmail.com
+                                </span>
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <i class="fa fa-location-arrow"></i>
+                                </span>
+                                <span class="text">
+                                   Hatimura Gaon, Dibrugarh, Assam <br> 786007
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+      
+                </div>
+            </div>
+      </div>
+      <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3><span><img src="LOGO.png" alt="LOGO"></span><span class="textfot"> Sri Sathya Sai <p>Prashanti Divine Valley School</p></span> </h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+                
+                <a href="about.html">Blog</a>
+            
+                <a href="about.html">About</a>
+                
+                <a href="">Faq</a>
+                
+                <a href="contact.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Sri Sathya Sai School © 2015</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Hatimura Gaon,Dibrugarh</span> Assam, India</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 1234567890</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@Prashantidivinevalleyschool.com">support@Prashantidivinevalleyschool.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the School</span>
+                Sri Sathya Sai Prasanthi Divine Valley School,
+                     Dibrugarh A fructiferous tree from the tiny sapling Sri Sathya Sai Education is an integral part of Sai Mission through which the legacy of Sathya Sai will be carried forward by the coming generation of centuries. 
+                     Swami emphasized this time and again in many of his divine discourses and through establishment of many education institutions of excellence well known world over. 
+                     Following the divine directive, many devotees....<a href="about.html">...Read more</a>
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+
+

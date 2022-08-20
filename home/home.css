@@ -1,0 +1,153 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url();
+  -webkit-background-size:cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+  
+}
+.menu-area li a {
+  text-decoration: none;
+}
+
+.menu-area li {
+  list-style-type: none;
+}
+
+.custom-padding{
+  padding-top: 25px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  margin: 0%;
+  padding: 39px 0;
+  background: rgb(141, 141, 141);
+  z-index: 1001;
+  text-align: right;
+  padding-right: 2%;
+  top: 0;
+  opacity: 0.9;
+}
+
+.logo {
+  width: 20%;
+  float: left;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
+  padding: 5px;
+  text-shadow: #f1f1f1;
+  display: flex;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(92, 159, 221), 0 0 25px blue, 0 0 5px rgb(154, 154, 201);
+}
+
+.logo img{
+  width: 20%;
+  float: left;
+  color: rgb(155, 95, 95);
+  font-size: 18px;
+  padding-left: 5px;
+  border-radius: 150%;
+  display: flex;
+}
+
+.menu-area li {
+  display: inline-block;
+}
+
+.menu-area a {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  padding: 0 25px;
+  font-size: 14px;
+  line-height: 30px;
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.menu-area a:hover {
+  background: tomato;
+  color: #fff;
+
+}
+
+.menu-area a:hover:after {
+  transform: translateY(-50%) rotate(-35deg);
+}
+
+nav:before {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-right: 10px solid #333;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  left: 0;
+}
+
+nav:after {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-left: 10px solid #333;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  right: 0;
+}
+.btn{
+  border: none;
+  outline: none;
+  padding: 15px 32px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.menu-area a.active{
+ background-color: rgb(76, 204, 108);
+  color: whitesmoke;
+  border-radius: 20% 0px;
+}
+#main1{
+padding-top: 150px;
+align-items: justify;
+text-align: justify;
+}
+
+.container{
+padding-top: 120px;
+width: auto;
+}
+.announcement-bar{
+color: rgb(157, 210, 250);
+background-color: #ece8e7;
+font-size: 12px;
+text-align: center;
+padding: 10px;
+}
+
+.announcement-bar .badge{
+background-color: rgb(122, 176, 226);
+color: #fff;
+margin-left: 4px;
+margin-right: 4px;
+margin-top: 3px;
+margin-bottom: 0px;
+padding: 10px 10px 10px 10px;
+font-weight: bold;
+text-transform: uppercase;
+}

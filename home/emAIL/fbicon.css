@@ -1,0 +1,16 @@
+.centerdiv a{
+    height: 100px;
+    width: 100px;
+    background-color: #6cc7e2;
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+}
+.centerdiv a i{
+    line-height: 100px;
+    transition: all 0.3s linear;
+}
+.centerdiv a:hover i{
+    transform: scale(1.4);
+}

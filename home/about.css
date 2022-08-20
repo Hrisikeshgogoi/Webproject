@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+div.transbox{
+    margin: 30px;
+    background-color: #ffdfdf;
+    border: hidden;
+    border-radius: 2%;
+    opacity: 0.6;
+}
+div.transbox p{
+    margin: 5%;
+    margin-top: auto;
+    font-weight: bold;
+    color: #000000;
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: rgb(241, 188, 40);
+    background-image: url(sp1.jpg) ;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    margin-top: 100px;
+}
+.row{
+    width: 100%;
+    padding: 50px 100px;
+}
+.image-section{
+    width: 20%;
+    float: left;
+}
+.image-section img{
+    width: 50%;
+    height: auto;
+}
+.content{
+    width: 54%;
+    float: left;
+    margin: 50px;
+}
+.content h1{
+    font-size: 90px;
+    letter-spacing: 3.5px;
+    margin-top: 25px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.content h3{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #db4e5a;
+    margin-top: 25px;
+    text-align: center;
+}
+.content p{
+    font-size: 20px;
+    font-family: serif;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.centerdiv{
+     align-items: center;
+     display: flex;
+     justify-content: left;
+     height: 200px;
+
+}
+
+.centerdiv p{
+    border-style: inset;
+    text-decoration: wavy;
+}
+
+h3{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+    padding-left: 10px;
+    cursor: pointer;
+}
+h3::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(43, 209, 98);
+    bottom: -10px;
+    left: 50.70%;
+    transform: translate(-50%);
+    animation: animate 1.8s linear infinite;
+    
+}
+@keyframes animate{
+    0%{
+        width:100px;
+    }
+    50%{
+        width:200px;
+    }
+    100%{
+        width:100px
+    }
+}
+
+.image-section2{
+    width: 20%;
+    float: right;
+}
+.image-section2 img{
+    width: 60%;
+    height: auto;
+    border-radius: 100%;
+}

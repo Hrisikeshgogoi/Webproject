@@ -1,0 +1,9 @@
+#header{
+    background-color: gray;
+    color: aliceblue;
+    padding: 25px;
+    text-align: center;
+}
+#login_form{
+    padding: 50px;
+}
